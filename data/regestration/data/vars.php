@@ -1,0 +1,1 @@
+<?php $HOST = "localhost"; $USER = "root"; $PASS = ""; $db_name = "vlad"; $db_user_table = "users"; $u_role = "10"; $reg_text = "Простая регистрация"; ?>
