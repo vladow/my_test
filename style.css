@@ -1,0 +1,19 @@
+/* 
+    Document   : style
+    Created on : 15.11.2012, 7:02:11
+    Author     : Влад
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.nav{
+    display: block;
+    float: left;
+    width: 30%;
+    min-height: 100%;
+    
+}

@@ -1,25 +1,46 @@
 <?php
-   
 require_once 'include/vars.php';
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title></title>
     </head>
     <body>
-        <div>
+        <div class="head">
             <?php
-            include_once 'include/auth.php';
             session_start();
-            include_once 'include/menu.php';
+            echo 'стартую сессию<br />';
+            echo 'начинаю авторизацию<br />';
+            include_once 'include/auth.php';
+            
             ?>
+
         </div>
-        <div>
-            <?php
-            include_once 'include/index_data.php';
-            ?>
+        <div class="main">
+            <div class="nav">
+                <fieldset>
+                    <legend>Меню</legend>
+                    <?php
+                    include_once 'include/menu.php';
+                    ?>
+                </fieldset>
+            </div>
+            <div class="content">
+                <fieldset>
+                    <legend>Информация</legend>
+                    <?php
+                    include_once 'include/index_data.php';
+                    ?>
+                </fieldset>
+            </div>
         </div>    
+        <div class="footer">
+            <fieldset>
+                Vladow Corporation 2012&COPY;. Все права защищены.
+            </fieldset>
+        </div>
     </body>
 </html>
