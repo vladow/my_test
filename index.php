@@ -1,3 +1,7 @@
+<?php
+   
+require_once 'include/vars.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,8 +11,9 @@
     <body>
         <div>
             <?php
-            include_once 'include/menu.php';
             include_once 'include/auth.php';
+            session_start();
+            include_once 'include/menu.php';
             ?>
         </div>
         <div>

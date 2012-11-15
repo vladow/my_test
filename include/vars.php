@@ -1,0 +1,1 @@
+<?php $HOST = "localhost"; $USER = "root"; $PASS = ""; $db_name = "my_db"; $db_user_table = "users"; $u_role = "10"; $reg_text = "Регистрация:"; if (!mysql_connect("$HOST", "$USER", "$PASS"))echo "Не удается подключить базу данных MySQL<br />"; mysql_select_db($db_name);?>

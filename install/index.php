@@ -9,7 +9,7 @@
             <?php
             if (isset($_POST['knopka'])) {
                 require_once 'file_create.php';
-                require_once '../data/vars.php';
+                require_once '../include/vars.php';
                 require_once 'functions.php';
                 require_once 'db_install.php';
             } else {

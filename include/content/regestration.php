@@ -1,4 +1,4 @@
 <?php
 
-include_once '/../../data/regestration/index.php';
+include_once '/../regestration.php';
 ?>

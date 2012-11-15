@@ -1,7 +1,5 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+echo '<H4>$_COOKIE</H4><pre>';var_dump($_COOKIE);echo '</pre>';
+echo '<H4>$_SESSION</H4><pre>';var_dump($_SESSION);echo '</pre>';
 ?>

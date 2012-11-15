@@ -27,9 +27,9 @@ if (!table_exist($db_user_table)) {
 `u_id` int(11) unsigned NOT NULL auto_increment, 
 `u_name` varchar(30) NOT NULL, 
 `u_pass` varchar(32) NOT NULL, 
-`u_hash` varchar(32) NOT NULL,
 `u_role` int(11) unsigned NOT NULL,
 `u_sessid` varchar(32) NOT NULL,
+`u_info` varchar(32) NOT NULL,
 PRIMARY KEY (`u_id`) 
 ) ENGINE=MyISAM DEFAULT CHARSET=cp1251 AUTO_INCREMENT=1";
     if (mysql_query($query)) {

@@ -68,7 +68,9 @@ if (valid($user_name) == FALSE) {
     ?> <p id="err" class="message"> <?php echo $err_m; ?> </p>
     <?php
 } else {
-    $u_sess = md5(generateString(32));
+    $u_sess = md5(generateString(26));
+    session_id($u_sess);
+    session_start();
     $result = mysql_query("INSERT INTO $db_user_table (u_name, u_pass, u_hash, u_role, u_sessid) VALUES ('$user_name', '$user_pass','$hash', '$u_role', '$u_sess')");
     if ($result) {
         ?> <p id="err" class="message"><?php echo "Регистрация прошла успешно!"; ?> </p>
